@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="login.css" rel="stylesheet" type="text/css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login">
+        <div id="type">
+            <a id="cust" href="#">CUSTOMER LOGIN</a>
+            <a id="hotel" href="#">HOTEL LOGIN</a>
+        </div>
+        <br>
+        <form action="">
+          <label style="font-size: 16px;">User Id/Email</label>
+          <p><input type="email" name="login" value="" placeholder="Email" required></p>
+          <br>
+          <label style="font-size: 16px;">Password</label>
+          <p><input type="password" name="password" value="" placeholder="Password" required></p>
+          <p class="submit"><input type="submit" name="commit" value="Login"></p>
+          <br>
+          <div id="login-help">
+            <h5 style="color:black;font-size: 16px;">Don't have an account? Register Now (<a href="signup.htm">Customer</a> / <a href="signup.htm">Hotel</a>)</h5>
+            <p><a style="color: blue;">Forgot Password?</a></p>
+          </div>
+        </form>
+      </div>  
+      <script>
+        lnk1 = document.getElementById("hotel");
+        lnk2 = document.getElementById("cust");
+        lnk1.onclick = function(){
+            //alert("Registration for Hotels");
+            lnk2.style.color = "white";
+        }
+        lnk2.onclick = function(){
+            //alert("Registration for Customers");
+            lnk1.style.color = "white";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

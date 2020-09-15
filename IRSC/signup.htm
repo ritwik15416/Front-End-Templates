@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="signup.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Register</title>
+    
+</head>
+<body>
+    <div id="type">
+        <a id="cust" href="#">CUSTOMER REGISTER</a><a id="hotel" href="#">HOTEL REGISTER</a>
+        
+    </div>
+    <form action="">
+        <div class='form-row'>
+            
+            <br>
+            <div class="col">
+                <label for="exampleFirstName">First Name</label>
+                <input type="textarea" class="form-control" size="15" id="exampleFirstName" aria-label: 'Large' aria-describedby="fnameHelp" placeholder="First Name" required>
+            </div>
+            <br>
+            <div class="col">
+                <label for="exampleLastName">Last Name</label>
+                <input type="textarea" class="form-control" size="15" id="exampleLastName" aria-label: 'Large' aria-describedby="lnameHelp" placeholder="Last Name" required>
+            </div>
+        </div>
+        <br>
+        <div class="col">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-label: 'Large' aria-describedby="emailHelp" placeholder="Enter email" required>
+        </div>
+        <br>
+        <div class="col">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" aria-label: 'Default' minlength="8" id="exampleInputPassword1" placeholder="Password: minimum 8 characters" required>
+        </div>
+        <br>
+        <div class="col">
+            <label for="examplePhoneNumber">Confirm Password</label>
+            <input type="password" class="form-control" aria-label: 'Default' size="10" id="examplePhoneNumber" placeholder="Retype password" required>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+    <br>
+    <script>
+        lnk1 = document.getElementById("hotel");
+        lnk2 = document.getElementById("cust");
+        lnk1.onclick = function(){
+            //alert("Registration for Hotels");
+            lnk2.style.color = "#DEE";
+        }
+        lnk2.onclick = function(){
+            //alert("Registration for Customers");
+            lnk1.style.color = "#DEE";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+form{
+	background-color: #0BE5CB;
+	text-align: center;
+	margin: 0 20% 10px 20%;
+	padding: 25px 10px 50px 10px;
+	
+}
+form .btn{
+    float: center;
+    margin-left: 15px;
+}
+#type{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    background-color:#DEE;
+    margin: 10px 20% 0 20%;
+    padding-bottom: 8px;
+}
+#type a{
+    padding-top: 15px;
+    color:black;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
